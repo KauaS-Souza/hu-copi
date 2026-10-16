@@ -1,0 +1,66 @@
+:root {
+    /* Color Primary */
+    
+    --color-primary: #F15A24;
+
+    /* Scale Primary Styles */
+    
+    --color-scale-primary-100: #FFEDE8;
+    --color-scale-primary-200: #FFDBD0;
+    --color-scale-primary-300: #FFB59E;
+    --color-scale-primary-400: #FF8B66;
+    --color-scale-primary-500: #F15A24;
+    --color-scale-primary-600: #D4460E;
+    --color-scale-primary-700: #AD3300;
+    --color-scale-primary-800: #842500;
+    --color-scale-primary-900: #5D1800;
+    --color-scale-primary-1000: #3A0B00;
+
+    /* Color Secondary */
+
+    --color-secondary: #2B2D42;
+
+    /* Scale Secondary Styles */
+
+    --color-scale-secondary-100: #F0F1F5;
+    --color-scale-secondary-200: #E1E3EB;
+    --color-scale-secondary-300: #D2D4EC;
+    --color-scale-secondary-400: #B6B9D6;
+    --color-scale-secondary-500: #9397BC;
+    --color-scale-secondary-600: #6D729E;
+    --color-scale-secondary-700: #4F537E;
+    --color-scale-secondary-800: #393D62;
+    --color-scale-secondary-900: #2B2D42;
+    --color-scale-secondary-1000: #0F101A;
+    
+    /* Color Tertiary */
+
+    --color-tertiary: #FFF3ED;
+
+    /* Scale Tertiary Styles */
+
+    --color-scale-tertiary-100: #FFF3ED;
+    --color-scale-tertiary-200: #FFEAE0; 
+    --color-scale-tertiary-300: #FAD1C0;
+    --color-scale-tertiary-400: #E6B5A0;
+    --color-scale-tertiary-500: #A1918A;
+    --color-scale-tertiary-600: #82736D;
+    --color-scale-tertiary-700: #625651;
+    --color-scale-tertiary-800: #453B37;
+    --color-scale-tertiary-900: #2A221F;
+    --color-scale-tertiary-1000: #0F0B0A;
+
+    /* Neutral Colors */
+    --color-neutral-0: #FFFFFF;
+    --color-neutral-100: #FDFDFD;
+    --color-neutral-200: #F8F9FA;
+    --color-neutral-300: #F1F3F5;
+    --color-neutral-400: #E9ECEF;
+    --color-neutral-500: #CED4DA;
+    --color-neutral-600: #ADB5BD;
+    --color-neutral-700: #6C757D;
+    --color-neutral-800: #495057;
+    --color-neutral-900: #212529;
+    --color-neutral-1000: #000000;
+
+}
