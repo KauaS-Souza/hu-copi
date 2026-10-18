@@ -1,7 +1,7 @@
 // src/components/WebsiteInformation/index.jsx
 import React from 'react';
 import './style.css';
-import { RiGlobalLine } from 'react-icons/ri'; 
+import { RiShieldKeyholeLine } from 'react-icons/ri'; 
 
 export default function WebsiteInformation({ backgroundImage }) {
     return (
@@ -28,7 +28,7 @@ export default function WebsiteInformation({ backgroundImage }) {
                 </div>
                 <div className="website-information-main">
                     <div className="badge-democracy">
-                        <RiGlobalLine size={16} />
+                        <RiShieldKeyholeLine size={16} />
                         <span>Democracia em código aberto</span>
                     </div>
                     <h1>Transparência política, fiscalização e cidadania ativa.</h1>
