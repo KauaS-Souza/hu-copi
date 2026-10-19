@@ -22,11 +22,12 @@
 .website-information-content {
     position: relative;
     z-index: 2;
+    padding: 60px 25px;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between; 
-    color: var(--color-neutral-0, #ffffff);
+    color: var(--color-neutral-0);
     font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
@@ -39,28 +40,32 @@
 .container-logo {
     display: flex;
     align-items: center;
-    gap: 0.75rem;
+    gap: 15px;
 }
 
-.container-logo-text h1 {
-    font-size: 1.5rem;
+.container-logo-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container-logo-text h2 {
+    font-size: 28px;
     font-weight: 700;
     margin: 0;
-    line-height: 1;
 }
 
 .container-logo-text p {
-    font-size: 0.875rem;
+    font-size: 16px;
     margin: 0;
-    opacity: 0.8;
 }
 
 .badge-official-data {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: 10px;
     background: rgba(255, 255, 255, 0.15);
-    padding: 0.5rem 1rem;
+    padding: 5px;
     border-radius: 100px;
     backdrop-filter: blur(4px);
 }
@@ -79,12 +84,14 @@
 }
 
 .website-information-main {
-    max-width: 540px;
-    margin-top: auto;
-    margin-bottom: auto; 
+    max-width: 540px; 
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
 .badge-democracy {
+    width: 50%;
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
@@ -95,14 +102,13 @@
     color: var(--color-primary);
     font-size: 0.875rem;
     font-weight: 600;
-    margin-bottom: 1.5rem;
 }
 
 .website-information-main h1 {
     font-size: 2.25rem;
     font-weight: 700;
     line-height: 1.25;
-    margin: 0 0 1rem 0;
+    margin: 0;
 }
 
 .website-information-main p {
@@ -114,10 +120,10 @@
 
 .website-information-footer {
     display: flex;
+    justify-content: space-around;
     gap: 3rem;
     border-top: 1px solid rgba(255, 255, 255, 0.2);
     padding-top: 2rem;
-    margin-top: auto;
 }
 
 .stat-box h2 {

@@ -1,7 +1,7 @@
-// src/components/WebsiteInformation/index.jsx
 import React from 'react';
 import './style.css';
 import { RiShieldKeyholeLine } from 'react-icons/ri'; 
+import logoHuari from '../../assets/images/ImgBox.jpg'
 
 export default function WebsiteInformation({ backgroundImage }) {
     return (
@@ -14,7 +14,9 @@ export default function WebsiteInformation({ backgroundImage }) {
             <div className="website-information-content">
                 <div className="website-information-header">
                     <div className="container-logo">
-                        <div className="logo-icon-placeholder"></div> 
+                        <div className="logo-icon-placeholder">
+                            <img src={logoHuari} />    
+                        </div> 
                         <div className="container-logo-text">
                             <h2>Huari</h2>
                             <p>Inteligência Cívica</p>
@@ -26,6 +28,7 @@ export default function WebsiteInformation({ backgroundImage }) {
                         <p>Dados oficiais • TCU & Diários Oficiais</p>
                     </div>
                 </div>
+
                 <div className="website-information-main">
                     <div className="badge-democracy">
                         <RiShieldKeyholeLine size={16} />
@@ -37,6 +40,7 @@ export default function WebsiteInformation({ backgroundImage }) {
                         e compreenda decisões governamentais com dados abertos e acessíveis.
                     </p>
                 </div>
+                
                 <div className="website-information-footer">
                     <div className="stat-box">
                         <h2>R$ 4.2 Bi</h2>
