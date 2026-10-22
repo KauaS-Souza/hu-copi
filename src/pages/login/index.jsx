@@ -40,7 +40,7 @@ export default function Login() {
 
                 
                 <form className="login-form">
-                    <h2>Entrar na Conta</h2>
+                    <h2 className="text-h2-bold ">Entrar na Conta</h2>
 
                     <InputText 
                         label="Email" 
