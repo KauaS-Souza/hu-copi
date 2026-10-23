@@ -3,7 +3,7 @@ import './style.css';
 
 export default function Button({title, icon, iconPosition = "right", identifier, ...props}) {
     return (
-        <button className={`btn ${identifier || ""}`} {...props}>
+        <button className={`btn text-btn-semibold ${identifier || ""}`} {...props}>
             {icon && iconPosition === "left" && <span className="btn-icon">{icon}</span>}
                     
             {title}
