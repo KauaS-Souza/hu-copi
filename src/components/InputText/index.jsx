@@ -7,8 +7,8 @@ export default function InputText({ label, labelAction, type = "text", iconLeft,
       
       {(label || labelAction) && (
         <div className="input-header-wrapper">
-          {label && <label className="input-label">{label}</label>}
-          {labelAction && <div className="input-label-action">{labelAction}</div>}
+          {label && <label className="input-label text-h3-regular">{label}</label>}
+          {labelAction && <div className="input-label-action text-p-small-regular">{labelAction}</div>}
         </div>
       )}
       
