@@ -3,7 +3,7 @@ import './style.css';
 import { RiShieldKeyholeLine } from 'react-icons/ri'; 
 import logoHuari from '../../assets/images/logoHuari.svg'
 
-export default function WebsiteInformation({ backgroundImage }) {
+export default function webSiteInformation({ backgroundImage }) {
     return (
         <div 
             className="website-information-container"

@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import './style.css';
-import WebsiteInformation from "../../components/WebsiteInformation";
+import WebsiteInformation from "../../components/web-site-information";
 import imageBackground from "../../assets/images/HuariEducationalLibrary.jpg";
-import Button from "../../components/Button";
-import InputText from "../../components/InputText";
+import Button from "../../components/button";
+import InputText from "../../components/input-text";
 
 
 import { 
@@ -15,7 +15,7 @@ import {
   RiEyeOffLine 
 } from "react-icons/ri";
 
-export default function Login() {
+export default function login() {
     
     const [email, setEmail] = useState('');
     const [senha, setSenha] = useState('');

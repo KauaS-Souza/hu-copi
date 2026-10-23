@@ -1,7 +1,7 @@
 import React from "react";
 import './style.css';
 
-export default function Button({title, icon, iconPosition = "right", identifier, ...props}) {
+export default function button({title, icon, iconPosition = "right", identifier, ...props}) {
     return (
         <button className={`btn text-btn-semibold ${identifier || ""}`} {...props}>
             {icon && iconPosition === "left" && <span className="btn-icon">{icon}</span>}

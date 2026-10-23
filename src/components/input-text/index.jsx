@@ -1,7 +1,7 @@
 import React from "react";
 import './style.css';
 
-export default function InputText({ label, labelAction, type = "text", iconLeft, iconRight, identifier, ...props }) {
+export default function inputText({ label, labelAction, type = "text", iconLeft, iconRight, identifier, ...props }) {
   return (
     <div className={`input-container-group ${identifier || ""}`}>
       
