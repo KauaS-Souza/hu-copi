@@ -1,0 +1,12 @@
+.password-toggle {
+    display: flex;
+    align-items: center;
+    padding: 0.25rem;
+    border: none;
+    background: transparent;
+    color: inherit;
+    cursor: pointer;
+}
+.password-toggle:focus-visible {
+    outline: 2px solid var(--color-scale-primary-700, #b03000);
+}
