@@ -1,0 +1,14 @@
+.checkbox {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.625rem;
+    cursor: pointer;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 0.8125rem;
+}
+.checkbox-input {
+    width: 1rem;
+    height: 1rem;
+    margin: 0;
+    accent-color: var(--color-scale-primary-700, #b03000);
+}
