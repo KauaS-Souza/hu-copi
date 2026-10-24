@@ -1,22 +1,30 @@
 import React from 'react';
 import './style.css';
-import { RiShieldKeyholeLine } from 'react-icons/ri'; 
-import logoHuari from '../../assets/images/logoHuari.svg'
+import { RiShieldKeyholeLine } from 'react-icons/ri';
+import logoHuari from '../../assets/images/logoHuari.svg';
 
-export default function webSiteInformation({ backgroundImage }) {
+export default function WebsiteInformation({ backgroundImage }) {
     return (
-        <div 
+        <section
             className="website-information-container"
-            style={{ backgroundImage: `url(${backgroundImage})` }} 
+            style={{ backgroundImage: `url(${backgroundImage})` }}
         >
-            <div className="overlay-darkness"></div>
+            <div
+                className="overlay-darkness"
+                aria-hidden="true"
+            />
 
             <div className="website-information-content">
-                <div className="website-information-header">
+
+                <header className="website-information-header">
                     <div className="container-logo">
                         <div className="logo-icon-placeholder">
-                            <img src={logoHuari} />    
-                        </div> 
+                            <img
+                                src={logoHuari}
+                                alt="Logo Huari"
+                            />
+                        </div>
+
                         <div className="container-logo-text">
                             <h2>Huari</h2>
                             <p>Inteligência Cívica</p>
@@ -24,39 +32,60 @@ export default function webSiteInformation({ backgroundImage }) {
                     </div>
 
                     <div className="badge-official-data">
-                        <span className="dot-active"></span>
-                        <p>Dados oficiais • TCU & Diários Oficiais</p>
-                    </div>
-                </div>
+                        <span
+                            className="dot-active"
+                            aria-hidden="true"
+                        />
 
-                <div className="website-information-main">
-                    <div className="badge-democracy">
-                        <RiShieldKeyholeLine size={16} />
-                        <span>Democracia em código aberto</span>
+                        <p className="text-p-regular">
+                            Dados oficiais • TCU & Diários Oficiais
+                        </p>
                     </div>
-                    <h1>Transparência política, fiscalização e cidadania ativa.</h1>
-                    <p>
-                        Acompanhe gastos públicos em tempo real, audite contratos parlamentares 
-                        e compreenda decisões governamentais com dados abertos e acessíveis.
+                </header>
+
+                <main className="website-information-main">
+                    <div className="badge-democracy">
+                        <RiShieldKeyholeLine
+                            size={16}
+                            aria-hidden="true"
+                        />
+
+                        <span className="text-p-regular">
+                            Democracia em código aberto
+                        </span>
+                    </div>
+
+                    <h1 className="text-h1-bold">
+                        Transparência política, fiscalização e
+                        cidadania ativa
+                    </h1>
+
+                    <p className="text-p-regular">
+                        Acompanhe gastos públicos em tempo real,
+                        audite contratos parlamentares e compreenda
+                        decisões governamentais com dados abertos
+                        e acessíveis.
                     </p>
-                </div>
-                
-                <div className="website-information-footer">
+                </main>
+
+                <footer className="website-information-footer">
                     <div className="stat-box">
                         <h2>R$ 4.2 Bi</h2>
                         <p>Gastos Monitorados</p>
                     </div>
-                    <div className="stat-box divider-left">
+
+                    <div className="stat-box">
                         <h2>510</h2>
                         <p>Parlamentares Monitorados</p>
                     </div>
-                    <div className="stat-box divider-left">
+
+                    <div className="stat-box">
                         <h2>SP</h2>
                         <p>Município Monitorado</p>
                     </div>
-                </div>
+                </footer>
 
             </div>
-        </div>
+        </section>
     );
 }
