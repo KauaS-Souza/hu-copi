@@ -1,0 +1,46 @@
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.625rem;
+    padding: 0.625rem 2.5rem;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    color: var(--color-neutral-700);
+    background-color: transparent;
+}
+
+.btn-primary {
+    background-color: var(--color-scale-primary-700);
+    color: var(--color-neutral-0);
+}
+
+.btn-secondary {
+    background-color: var(--color-scale-secondary-900);
+    color: var(--color-neutarl-0);
+}
+
+.btn-neutral-white {
+    background-color: var(--color-neutral-300);
+    color: var(--color-neutral-0);
+}
+
+.btn-radius-10{
+    border-radius: 10px;
+}
+
+.btn-radius-40 {
+    border-radius: 40px;
+}
+
+.btn-active {
+    background-color: var(--color-neutral-0);
+    color: var(--color-scale-primary-700);
+}
+
+.btn-active-bordered {
+    background-color: var(--color-scale-tertiary-100);
+    border: 1px solid var(--color-scale-primary-700);
+    color: var(--color-scale-primary-700);
+}
