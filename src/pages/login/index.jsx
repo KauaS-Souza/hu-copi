@@ -55,10 +55,11 @@ export default function login() {
                 <form className="login-form">
                     <h2 className="text-h2-bold ">Entrar na Conta</h2>
 
-                    <InputText 
+                    <InputText
+                        identifier="input-default"
                         label="Email" 
                         type="email"
-                        placeholder="Digite seu e-mail"
+                        placeholder="seuemail@exemplo.com "
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
                         iconLeft={<RiMailLine />} 
@@ -66,21 +67,22 @@ export default function login() {
 
                     
                     <InputText 
-                        label="Senha de acesso" 
-                        type={mostrarSenha ? "text" : "password"} 
+                        identifier="input-default"
+                        label="Senha de acesso"
+                        labelAction={<a>Esqueci minha senha</a>}
+                        type={mostrarSenha ? "text" : "password"}
                         placeholder="Digite sua senha"
                         value={senha}
                         onChange={(e) => setSenha(e.target.value)}
-                        labelAction={<a href="/recuperar-senha">Esqueci minha senha</a>} 
-                        iconLeft={<RiLockLine />}  
+                        iconLeft={<RiLockLine />} 
                         iconRight={
-                          <button 
-                            type="button" 
-                            onClick={() => setMostrarSenha(!mostrarSenha)} 
-                            className="btn-toggle-eye"
-                          >
+                            <button 
+                                type="button" 
+                                onClick={() => setMostrarSenha(!mostrarSenha)} 
+                                className="btn-toggle-eye"
+                            >
                             {mostrarSenha ? <RiEyeOffLine size={18} /> : <RiEyeLine size={18} />}
-                          </button>
+                        </button>
                         }
                     />
 

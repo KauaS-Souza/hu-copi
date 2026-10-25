@@ -1,3 +1,7 @@
+/* =========================
+   Estrutura base
+========================= */
+
 .input-container-group {
     display: flex;
     flex-direction: column;
@@ -35,16 +39,13 @@
 .input-field {
     width: 100%;
     padding: 0.9375rem 2rem;
-    border: none;
+    border: 1px solid transparent;
     border-radius: 10px;
     outline: none;
-    background-color: var(--color-neutral-300);
-    color: var(--color-neutral-700);
+    font-family: inherit;
+    background-color: transparent;
+    color: inherit;
     transition: border-color 0.2s ease;
-}
-
-.input-field:focus {
-    border-color: var(--color-scale-primary-700);
 }
 
 .input-icon-left,
@@ -57,7 +58,6 @@
     justify-content: center;
     border: none;
     z-index: 2;
-    color: var(--color-neutral-700);
 }
 
 .input-icon-left {
@@ -66,4 +66,46 @@
 
 .input-icon-right {
     right: 0.4rem;
+}
+
+/* =========================
+   Variação: Input padrão
+========================= */
+
+.input-default .input-field {
+    background-color: var(--color-neutral-300);
+    border-color: transparent;
+    color: var(--color-neutral-700);
+}
+
+.input-default .input-icon-left,
+.input-default .input-icon-right {
+    color: var(--color-neutral-700);
+}
+
+.input-default .input-field:focus {
+    border-color: var(--color-neutral-700);
+}
+
+/* =========================
+   Variação: Input de pesquisa
+========================= */
+
+.input-search .input-field {
+    background-color: transparent;
+    border-color: var(--color-neutral-0);
+    color: var(--color-neutral-0);
+}
+
+.input-search .input-field::placeholder {
+    color: var(--color-neutral-0);
+}
+
+.input-search .input-icon-left,
+.input-search .input-icon-right {
+    color: var(--color-neutral-0);
+}
+
+.input-search .input-field:focus {
+    border-color: var(--color-scale-primary-700);
 }
