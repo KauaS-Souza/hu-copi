@@ -33,7 +33,6 @@ export default function login() {
                 
                 
                 <section className="login-tabs-navigation">
-                
                     <Button title="Entrar na Conta" icon={<RiDoorOpenLine />} identifier="btn-tab-active" />
                     <Button title="Criar Conta" icon={<RiUserAddFill />} identifier="btn-tab-inactive" />
                 </section>

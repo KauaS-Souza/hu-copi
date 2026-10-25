@@ -20,24 +20,29 @@
 .container-right {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    gap: 50px;
     align-items: center;
-    padding: 4rem;
+    padding: 60px 20px;
     box-sizing: border-box;
     background-color: var(--color-neutral-0);
 }
 
 .login-tabs-navigation {
     display: flex;
-    gap: 1rem;
-    margin-bottom: 2rem;
-    width: 100%;
-    max-width: 420px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    width: 570px;
+    border-radius: 40px;
+    background-color: var(--color-neutral-300);
 }
 
 .login-form {
     width: 100%;
-    max-width: 420px;
+    max-width: 570px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .login-form h2 {
@@ -47,7 +52,6 @@
 .btn-login-submit {
     width: 100%;
     text-decoration: none;
-    margin-top: 1.5rem;
     background-color: var(--color-primary);
     color: var(--color-neutral-0);
 }
