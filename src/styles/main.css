@@ -3,5 +3,6 @@
 @import './base/variables.css';
 @import './base/typography.css';
 @import '../styles/components/buttons.css';
+@import '../styles/components/forms.css';
 
 @import './layout/grid.css';

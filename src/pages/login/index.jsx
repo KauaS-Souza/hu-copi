@@ -84,7 +84,7 @@ export default function login() {
                         }
                     />
 
-                    <Button title="Acessar Plataforma Huari" identifier="btn-login-submit" type="submit" />
+                    <Button title="Acessar Plataforma Huari" identifier="btn-primary btn-radius-40" type="submit" />
                 </form>
             </div>
         </div>
