@@ -80,21 +80,21 @@ export default function WebsiteInformation({ backgroundImage }) {
             >
                 <div className="stat-item">
                     <h2 className="text-h2-bold">R$ 4,2 bi</h2>
-                    <p className="text-p-small-regular">
+                    <p className="text-p-regular">
                         Gastos monitorados
                     </p>
                 </div>
 
                 <div className="stat-item stat-item--featured">
                     <h2 className="text-h2-bold">510</h2>
-                    <p className="text-p-small-regular">
+                    <p className="text-p-regular">
                         Parlamentares monitorados
                     </p>
                 </div>
 
                 <div className="stat-item">
                     <h2 className="text-h2-bold">SP</h2>
-                    <p className="text-p-small-regular">
+                    <p className="text-p-regular">
                         Município monitorado
                     </p>
                 </div>

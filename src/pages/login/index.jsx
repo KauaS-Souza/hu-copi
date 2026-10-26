@@ -5,15 +5,19 @@ import imageBackground from "../../assets/images/HuariEducationalLibrary.jpg";
 import Button from "../../components/button";
 import InputText from "../../components/input-text";
 
+import { FaArrowRightLong } from "react-icons/fa6";
+import { BiSolidDoorOpen } from "react-icons/bi";
+import { IoPersonAddSharp } from "react-icons/io5";
 
 import { 
   RiUserAddFill, 
-  RiDoorOpenLine, 
   RiMailLine, 
   RiLockLine, 
   RiEyeLine, 
   RiEyeOffLine 
 } from "react-icons/ri";
+
+import { AppleIcon, GoogleIcon } from "../../components/icons";
 
 export default function login() {
     
@@ -36,7 +40,8 @@ export default function login() {
                 <section className="login-tabs-navigation">
                     <Button
                         title="Entrar na Conta"
-                        icon={<RiDoorOpenLine />}
+                        icon={<BiSolidDoorOpen size={16}/>}
+                        iconPosition="left"
                         identifier="btn-radius-40"
                         active={abaAtiva === "entrar"}
                         onClick={() => setAbaAtiva("entrar")}
@@ -44,7 +49,8 @@ export default function login() {
 
                     <Button
                         title="Criar Conta"
-                        icon={<RiUserAddFill />}
+                        icon={<IoPersonAddSharp size={16} />}
+                        iconPosition="left"
                         identifier="btn-radius-40 "
                         active={abaAtiva === "criar"}
                         onClick={() => setAbaAtiva("criar")}
@@ -86,8 +92,68 @@ export default function login() {
                         }
                     />
 
-                    <Button title="Acessar Plataforma Huari" identifier="btn-primary btn-radius-40" type="submit" />
+                    <Button
+                        title="Acessar Plataforma Huari"
+                        identifier="btn-primary btn-radius-40"
+                        type="submit"
+                        icon={<FaArrowRightLong />}
+                        iconPosition="right"
+                    />
+
+                    <Button
+                        title="Visitante"
+                        identifier="btn-secondary btn-radius-40"
+                        type="button"
+                        icon={<FaArrowRightLong />}
+                        iconPosition="right"
+                    />
+
+                    <div className="login-divider">
+                        <hr className="login-divider-line" />
+                        <p className="text-p-regular">OU</p>
+                        <hr className="login-divider-line" />
+                    </div>
+
+                    <Button
+                        title="Entrar com o Google"
+                        identifier="btn-google btn-radius-10"
+                        type="button"
+                        icon={<GoogleIcon />}
+                        iconPosition="left"
+                    />
+
+                    <Button
+                        title="Entrar com a Apple"
+                        identifier="btn-apple btn-radius-10"
+                        type="button"
+                        icon={<AppleIcon />}
+                        iconPosition="left"
+                    />
                 </form>
+
+                <div className="login-footer">
+                    <p className="login-register-text text-p-regular">
+                        Ainda não tem uma conta?{" "}
+                        <a href="/cadastro">Cadastre-se.</a>
+                    </p>
+
+                    <nav className="login-footer-links" aria-label="Links institucionais">
+                        <a href="/privacidade" className="login-footer-link text-p-regular">
+                            <span className="login-footer-bullet" aria-hidden="true"></span>
+                            Privacidade
+                        </a>
+
+                        <a href="/termos-de-uso" className="login-footer-link text-p-regular">
+                            <span className="login-footer-bullet" aria-hidden="true"></span>
+                            Termos de Uso
+                        </a>
+
+                        <a href="/metodologia-aberta" className="login-footer-link text-p-regular">
+                            <span className="login-footer-bullet" aria-hidden="true"></span>
+                            Metodologia Aberta
+                        </a>
+                    </nav>
+                </div>
             </div>
         </div>
     );

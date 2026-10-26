@@ -18,11 +18,22 @@
 
 .btn-secondary {
     background-color: var(--color-scale-secondary-900);
-    color: var(--color-neutarl-0);
+    color: var(--color-neutral-0);
 }
 
 .btn-neutral-white {
     background-color: var(--color-neutral-300);
+    color: var(--color-neutral-0);
+}
+
+.btn-google {
+    border: 1px solid var(--color-neutral-300);
+    background-color: var(--color-neutral-0);
+    color: var(--color-neutral-1000);
+
+}
+.btn-apple {
+    background-color: var(--color-neutral-1000);
     color: var(--color-neutral-0);
 }
 
